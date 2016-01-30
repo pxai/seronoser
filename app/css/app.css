@@ -1,0 +1,57 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.team {
+    margin: 2em 3em;
+}
+
+.team span {
+    text-align: center;
+    display: inline-block;
+    padding: 2px;
+    width: 2em;    
+}
+
+#team-1 span {
+    background-color: red;
+}
+
+#team-2 span {
+    background-color: yellow;
+}
+
+#team-3 span {
+    background-color: green;
+}
+
+#team-4 span {
+    background-color: blue;
+}

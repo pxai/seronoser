@@ -1,0 +1,18 @@
+{
+    "id": 2,
+    "question": "Sistemas operativos",
+    "answers": [
+        {"answer":"Windows 10", "correct":true, "explanation":"", "image" : "data/question1/1.jpg"},
+        {"answer":"Fedora", "correct":true, "explanation":"", "image" : "data/question1/2.jpg"},
+        {"answer":"Debian", "correct":true, "explanation":"", "image" : "data/question1/3.jpg"},
+        {"answer":"OS X", "correct":true, "explanation":"", "image" : "data/question1/4.jpg"},
+        {"answer":"Ubuntu", "correct":true, "explanation":"", "image" : "data/question1/5.jpg"},
+        {"answer":"WebOS", "correct":true, "explanation":"", "image" : "data/question1/6.jpg"},
+        {"answer":"Windows NT", "correct":true, "explanation":"", "image" : "data/question1/7.jpg"},
+        {"answer":"MSDOS", "correct":true, "explanation":"", "image" : "data/question1/8.jpg"},
+        {"answer":".NET", "correct":false, "explanation":"", "image" : "data/question1/9.jpg"},
+        {"answer":"Java", "correct":false, "explanation":"", "image" : "data/question1/10.jpg"},
+        {"answer":"WPC", "correct":false, "explanation":"", "image" : "data/question1/11.jpg"},
+        {"answer":"Windows J", "correct":false, "explanation":"", "image" : "data/question1/12.jpg"}
+    ]
+}
