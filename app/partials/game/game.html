@@ -1,5 +1,32 @@
 <section>
     <h2>Ser o No Ser :: Game</h2>
-    <p>Elige sabiamente</p>
+    <p>Equipos: 
+        <span ng-repeat="team in teams">
+            <b>{{team.getName()}}</b>: {{team.getPoints()}} |
+        </span>
+    </p>
+
+    <div>
+        <div class="col-md-3">{{game.answer1}}</div>
+        <div class="col-md-3">{{game.answer1}}</div>
+        <div class="col-md-3">{{game.answer1}}</div>
+        <div class="col-md-3">{{game.answer1}}</div>
+    </div>
+    <div>
+        <div class="col-md-3">{{game.answer1}}</div>
+        <div class="col-md-6">{{game.getQuestion().getText()}}</div>
+        <div class="col-md-3">{{game.answer1}}</div>
+    </div>
+    <div>
+        <div class="col-md-3">{{game.answer1}}</div>
+        <div class="col-md-6">{{game.getQuestion().getText()}}</div>
+        <div class="col-md-3">{{game.answer1}}</div>
+    </div>
+    <div>
+        <div class="col-md-3">{{game.answer1}}</div>
+        <div class="col-md-3">{{game.answer1}}</div>
+        <div class="col-md-3">{{game.answer1}}</div>
+        <div class="col-md-3">{{game.answer1}}</div>
+    </div>
     <a href="#/settings">Configurar</a>
 </section>

@@ -8,10 +8,10 @@
 */
 
 
-var Team = function (id, name, points) {
+var Team = function (id, name) {
         var _id = id;
 	var _name = name;
-        var _points = points;
+        var _points = 0;
 	var _answered = [];
 
 	this.generate = function () { 

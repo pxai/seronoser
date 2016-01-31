@@ -7,9 +7,10 @@
 */
 
 
-var Team = function (id, name) {
+var Game = function (id, name) {
         var _id = id;
 	var _name = name;
+        var _currentQuestion = 0;
 	var _questions = [];
         var _teams = [];
 
@@ -24,8 +25,17 @@ var Team = function (id, name) {
 		return _name;
 	};
 
-	this.getQuestions = function () {
-		return _questions;
+	this.getCurrentQuestion = function () {
+		return _currentQuestion;
+	};
+        
+        this.nextQuestion = function () {
+                if (_currentQuestion < _questions.length-1) {
+                    _currentQuestion++;
+        	    return _currentQuestion;
+                } else {
+                    return -1;
+                }
 	};
 
 	this.getQuestions = function () {

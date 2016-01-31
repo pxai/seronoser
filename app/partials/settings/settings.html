@@ -1,25 +1,26 @@
 <section>
     <h2>Settings</h2>
+    <div id="title" class="team">
+        <label for="game-title">Nombre partida</label>
+        <input type="text" id="game-title" value="Ser o No Ser" ng-model="gameTitle">
+    </div>
     <p>Selecciona los equipos</p>
     <div id="team-1" class="team">
         <span>1</span>
-        <input type="text" id="team-1-name">
-        <input type="checkbox" id="team-1-selected">
+        <input type="text" id="team-1-name"  ng-model="team1">
     </div>
     <div id="team-2" class="team">
         <span>2</span>
-        <input type="text" id="team-2-name">
-        <input type="checkbox" id="team-2-selected">
+        <input type="text" id="team-2-name" ng-model="team2">
     </div>
     <div id="team-3" class="team">
         <span>3</span>
-        <input type="text" id="team-3-name">
-        <input type="checkbox" id="team-3-selected">
+        <input type="text" id="team-3-name"  ng-model="team3">
     </div>
     <div id="team-4" class="team">
         <span>4</span>
-        <input type="text" id="team-4-name">
-        <input type="checkbox" id="team-4-selected">
+        <input type="text" id="team-4-name"  ng-model="team4">
     </div>
+    <button type="button" class="btn btn-success" ng-click="loadGame()">Jugar</button>
     <a href="#/game">Jugar</a>
 </section>
