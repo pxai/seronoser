@@ -41,6 +41,10 @@ var Game = function (id, name) {
 	this.getQuestions = function () {
 		return _questions;
 	};
+        
+        this.setQuestions = function (questions) {
+		_questions = questions;
+	};
 
 	this.addTeam = function (team) {
 		_teams.push(team);

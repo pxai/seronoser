@@ -13,7 +13,12 @@ angular.module('myApp.game', [
   });
 }])
 
-.controller('GameCtrl', ['$scope',function($scope) {
-        $scope.teams = game.getTeams();
-        console.log(game.getTeams());
+.controller('GameCtrl', ['$scope', 'Questions',function($scope,Questions) {
+        $scope.game = game;
+        $scope.teams = $scope.game.getTeams();
+        console.log($scope.game.getTeams());
+        $scope.game.setQuestions(Questions.query({questionId: 1}));
+        $scope.solveAnswer = function () {
+            
+        };
 }]);
