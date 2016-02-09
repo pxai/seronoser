@@ -55,3 +55,15 @@
 #team-4 span {
     background-color: blue;
 }
+
+.answer {
+    height: 10em;
+    border: 1px solid gray;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.answerinfo {
+    text-align: center;
+    padding-top: 2em;    
+}

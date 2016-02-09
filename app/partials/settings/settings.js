@@ -12,10 +12,17 @@ angular.module('myApp.settings', ['ngRoute'])
 }])
 
 .controller('SettingsCtrl', ['$scope','$location',function($scope,$location) {
+        $scope.team1 = "aa";
+        $scope.team2 = "bb";
+        $scope.team3 = "cc";
+        $scope.team4 = "dd"
+        $scope.gameTitle = "Ser o no Ser";
+        $scope.totalPanels = 12;
+
         $scope.loadGame = function () {
             var teams = [];
             var id = 1;
-            game = new Game(0,$scope.gameTitle);
+            game = new Game(0,$scope.gameTitle, $scope.totalPanels);
 
             if (!angular.isUndefined($scope.team1) && $scope.team1.trim() !='') {
                 game.addTeam(new Team(id++,$scope.team1.trim()));
@@ -32,7 +39,7 @@ angular.module('myApp.settings', ['ngRoute'])
             
             console.log(game.getTeams());
             console.log($scope.gameTitle); 
-            $location.path('game')
+            $location.path('game');
             
         }
 }]);

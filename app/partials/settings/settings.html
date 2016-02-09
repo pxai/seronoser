@@ -2,7 +2,7 @@
     <h2>Settings</h2>
     <div id="title" class="team">
         <label for="game-title">Nombre partida</label>
-        <input type="text" id="game-title" value="Ser o No Ser" ng-model="gameTitle">
+        <input type="text" id="game-title"  ng-model="gameTitle">
     </div>
     <p>Selecciona los equipos</p>
     <div id="team-1" class="team">
@@ -11,15 +11,32 @@
     </div>
     <div id="team-2" class="team">
         <span>2</span>
-        <input type="text" id="team-2-name" ng-model="team2">
+        <input type="text" id="team-2-name" ng-model="team2" >
     </div>
     <div id="team-3" class="team">
         <span>3</span>
-        <input type="text" id="team-3-name"  ng-model="team3">
+        <input type="text" id="team-3-name"  ng-model="team3" >
     </div>
     <div id="team-4" class="team">
         <span>4</span>
         <input type="text" id="team-4-name"  ng-model="team4">
+    </div>
+    <div id="total-panels">
+        <span>Total panels</span>
+        <select id="totalPanels"  ng-model="totalPanels">
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7</option>
+               <option value="8">8</option>
+               <option value="9">9</option>
+               <option value="10">10</option>
+               <option value="11">11</option>
+               <option value="12" ng-selected="12" selected="selected">12</option>
+        </select>
     </div>
     <button type="button" class="btn btn-success" ng-click="loadGame()">Jugar</button>
     <a href="#/game">Jugar</a>

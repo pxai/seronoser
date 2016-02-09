@@ -5,28 +5,66 @@
             <b>{{team.getName()}}</b>: {{team.getPoints()}} |
         </span>
     </p>
-
+    
     <div>
-        <div class="col-md-3">{{game.answer1}}</div>
-        <div class="col-md-3">{{game.answer1}}</div>
-        <div class="col-md-3">{{game.answer1}}</div>
-        <div class="col-md-3">{{game.answer1}}</div>
+        <div class="col-md-3 answer" ng-click="solveAnswer(0)" id="answer-0" ng-disabled="game.getCurrentQuestion().answers[1].answered">{{game.getCurrentQuestion().answers[0].answer}}</div>
+        <div class="col-md-3 answer" ng-click="solveAnswer(1)" id="answer-1">{{game.getCurrentQuestion().answers[1].answer}}</div>
+        <div class="col-md-3 answer" ng-click="solveAnswer(2)" id="answer-2">{{game.getCurrentQuestion().answers[2].answer}}</div>
+        <div class="col-md-3 answer" ng-click="solveAnswer(3)" id="answer-3">{{game.getCurrentQuestion().answers[3].answer}}</div>
     </div>
     <div>
-        <div class="col-md-3">{{game.answer1}}</div>
-        <div class="col-md-6">{{game.getQuestion().getText()}}</div>
-        <div class="col-md-3">{{game.answer1}}</div>
+        <div class="col-md-3 answer" ng-click="solveAnswer(4)" id="answer-4">{{game.getCurrentQuestion().answers[4].answer}}</div>
+        <div class="col-md-6 answerinfo">{{game.getCurrentQuestion().id}} - {{game.getCurrentQuestion().question}}</div>
+        <div class="col-md-3 answer" ng-click="solveAnswer(5)" id="answer-5">{{game.getCurrentQuestion().answers[5].answer}}</div>
     </div>
     <div>
-        <div class="col-md-3">{{game.answer1}}</div>
-        <div class="col-md-6">{{game.getQuestion().getText()}}</div>
-        <div class="col-md-3">{{game.answer1}}</div>
+        <div class="col-md-3 answer" ng-click="solveAnswer(6)" id="answer-6">{{game.getCurrentQuestion().answers[6].answer}}</div>
+        <div class="col-md-6 answerinfo">
+            <h3>{{game.getCurrentTeam().getName()}} - {{game.getCurrentTeam().getPoints()}}</h3>
+            <button type="button" class="btn btn-warning" ng-click="passTurn()" ng-disabled="!game.isOneAnswered()">Pasar</button>
+        </div>
+        <div class="col-md-3 answer" ng-click="solveAnswer(7)" id="answer-7">{{game.getCurrentQuestion().answers[7].answer}}</div>
     </div>
     <div>
-        <div class="col-md-3">{{game.answer1}}</div>
-        <div class="col-md-3">{{game.answer1}}</div>
-        <div class="col-md-3">{{game.answer1}}</div>
-        <div class="col-md-3">{{game.answer1}}</div>
+        <div class="col-md-3 answer" ng-click="solveAnswer(8)" id="answer-8">{{game.getCurrentQuestion().answers[8].answer}}</div>
+        <div class="col-md-3 answer" ng-click="solveAnswer(9)" id="answer-9">{{game.getCurrentQuestion().answers[9].answer}}</div>
+        <div class="col-md-3 answer" ng-click="solveAnswer(10)" id="answer-10">{{game.getCurrentQuestion().answers[10].answer}}</div>
+        <div class="col-md-3 answer" ng-click="solveAnswer(11)" id="answer-11">{{game.getCurrentQuestion().answers[11].answer}}</div>
     </div>
     <a href="#/settings">Configurar</a>
 </section>
+<div class="modal" id="answerModalWindow" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        <h4 class="modal-title" id="theModalLabel">¿Correct?</h4>
+      </div>
+      <div class="modal-body">
+        Oh my god
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+   </div>
+</div>
+<div class="modal" id="panelModalWindow" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        <h4 class="modal-title" id="theModalLabel">End of panel</h4>
+      </div>
+      <div class="modal-body">
+        Go to next panel
+        <span ng-repeat="team in teams">
+            <b>{{team.getName()}}</b>: {{team.getPoints()}} |
+        </span>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-warning" data-dismiss="modal">Continue</button>
+      </div>
+    </div>
+   </div>
+</div>
