@@ -40,6 +40,14 @@ var Game = function (id, name, totalPanels) {
 		return _totalPanels;
 	};
 
+         this.getCurrentCorrect = function () {
+		return _currentCorrect;
+	}; 
+        
+        this.getCurrentIncorrect = function () {
+		return _currentIncorrect;
+	};
+    
         this.setTotalPanels = function (totalPanels) {
             _totalPanels = totalPanels;
 	};
@@ -63,7 +71,7 @@ var Game = function (id, name, totalPanels) {
             this.getCurrentQuestion().answers[number].answered = true;
             _answered = true;
             
-            if (this.getCurrentQuestion().answers[number].correct) {
+            if (this.getCurrentQuestion().answers[number].correct === true) {
                _currentCorrect++;
                increasePoints();
                return true; 
@@ -102,6 +110,9 @@ var Game = function (id, name, totalPanels) {
 	};
         
         this.nextPanel = function () {
+                _currentCorrect = 0;
+                _currentIncorrect = 0;
+                _answered = false;
                 if (_currentPanel < _totalPanels - 1) {
                     _currentPanel++;
         	    return _currentPanel;

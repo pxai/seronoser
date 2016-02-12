@@ -28,12 +28,7 @@ angular.module('myApp.game', [
         $scope.solveAnswer = function (number) {
             if ($scope.game.isAnswered(number)) { return; }
             
-            console.log("solved answer: " + number);
 
-            $('#answerModalWindow').modal({
-                        keyboard: true,
-                        backdrop: true
-            });
             
             if ($scope.game.tryAnswer(number)) {
                 $('#answer-'+number).css('background-color','lightGreen');                
@@ -41,17 +36,31 @@ angular.module('myApp.game', [
             } else {
                 $('#answer-'+number).css('background-color','red');
             }
+
+
+            $('#answerModalWindow').modal({
+                       keyboard: true,
+                       backdrop: true
+            });
+
             
-            if ($scope.game.isPanelEnd()) {
-                    $('#panelModalWindow').modal({
-                        keyboard: true,
-                        backdrop: true
-                    });
-                $scope.game.nextPanel();
-                $scope.loadPanel();
-            }
+            console.log("solved answer: " + number + " . Remaining: "  + ($scope.game.getCurrentCorrect() + $scope.game.getCurrentIncorrect()));
+        
         };
                 
+                
+            $('#answerModalWindow').on('hidden.bs.modal', function (e) {
+                console.log("hidden. . Remaining: "  + ($scope.game.getCurrentCorrect() + $scope.game.getCurrentIncorrect()));
+                 if ($scope.game.isPanelEnd()) {
+                    $('#panelModalWindow').modal('show');
+                }
+            });
+            
+            $('#panelModalWindow').on('shown.bs.modal', function (e) {            
+                        $scope.game.nextPanel();
+                        $scope.loadPanel();
+            });
+            
         $scope.passTurn = function () {
           $scope.game.passTurn();
         };
