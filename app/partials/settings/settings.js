@@ -16,6 +16,8 @@ angular.module('myApp.settings', ['ngRoute'])
         $scope.team2 = "bb";
         $scope.team3 = "cc";
         $scope.team4 = "dd"
+        $scope.team5 = "ee"
+        $scope.team6 = "ff"
         $scope.gameTitle = "Ser o no Ser";
         $scope.totalPanels = 12;
 
@@ -36,10 +38,23 @@ angular.module('myApp.settings', ['ngRoute'])
             if (!angular.isUndefined($scope.team4) && $scope.team4.trim() !='') {
                 game.addTeam(new Team(id,$scope.team4.trim()));
             }
+
+            if (!angular.isUndefined($scope.team5) && $scope.team5.trim() !='') {
+                game.addTeam(new Team(id,$scope.team5.trim()));
+            }
+
+
+            if (!angular.isUndefined($scope.team6) && $scope.team6.trim() !='') {
+                game.addTeam(new Team(id,$scope.team6.trim()));
+            }
             
             console.log(game.getTeams());
             console.log($scope.gameTitle); 
             $location.path('game');
-            
-        }
+        };
+        
+        $scope.showCurrent = function (number) {
+            $scope.currentTeam = 'team' + number;
+            console.log('changed current to: ' + number);
+        };
 }]);

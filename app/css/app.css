@@ -56,6 +56,14 @@
     background-color: blue;
 }
 
+#team-5 span {
+    background-color: purple;
+}
+
+#team-6 span {
+    background-color: pink;
+}
+
 .answer {
     height: 10em;
     border: 1px solid gray;
