@@ -17,6 +17,10 @@ var Team = function (id, name) {
 	this.generate = function () { 
 	};
 
+	this.getId = function () {
+		return _id;
+	};
+        
 	this.getName = function () {
 		return _name;
 	};

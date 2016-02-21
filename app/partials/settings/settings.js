@@ -27,25 +27,23 @@ angular.module('myApp.settings', ['ngRoute'])
             game = new Game(0,$scope.gameTitle, $scope.totalPanels);
 
             if (!angular.isUndefined($scope.team1) && $scope.team1.trim() !='') {
-                game.addTeam(new Team(id++,$scope.team1.trim()));
+                game.addTeam(new Team(1,$scope.team1.trim()));
             }
             if (!angular.isUndefined($scope.team2) && $scope.team2.trim() !='') {
-                game.addTeam(new Team(id++,$scope.team2.trim()));
+                game.addTeam(new Team(2,$scope.team2.trim()));
             }
             if (!angular.isUndefined($scope.team3) && $scope.team3.trim() !='') {
-                game.addTeam(new Team(id++,$scope.team3.trim()));
+                game.addTeam(new Team(3,$scope.team3.trim()));
             }
             if (!angular.isUndefined($scope.team4) && $scope.team4.trim() !='') {
-                game.addTeam(new Team(id,$scope.team4.trim()));
+                game.addTeam(new Team(4,$scope.team4.trim()));
             }
-
             if (!angular.isUndefined($scope.team5) && $scope.team5.trim() !='') {
-                game.addTeam(new Team(id,$scope.team5.trim()));
+                game.addTeam(new Team(5,$scope.team5.trim()));
             }
-
 
             if (!angular.isUndefined($scope.team6) && $scope.team6.trim() !='') {
-                game.addTeam(new Team(id,$scope.team6.trim()));
+                game.addTeam(new Team(6,$scope.team6.trim()));
             }
             
             console.log(game.getTeams());

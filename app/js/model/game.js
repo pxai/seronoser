@@ -19,10 +19,47 @@ var Game = function (id, name, totalPanels) {
         var _currentIncorrect = 0;
         var _answered = false;
         var _inferno = true;
+        var _lastPoints = 0;
+        var _answerIndexes = [0,1,2,3,4,5,6,7,8,9,10,11];
 
         var increasePoints = function () {
             console.log('Increase points');
-            _teams[_currentTeam].increasePoints(5 * (_currentCorrect + _currentIncorrect));
+            _lastPoints = 5 * (_currentCorrect + _currentIncorrect);
+            _teams[_currentTeam].increasePoints(_lastPoints);
+        };
+        
+        var shuffle = function (arr) {
+            var rndX = 0;
+            var rndY = 0;
+            var tmp = 0;
+            
+            for (var i = 0; i < arr.length; i++) {
+                rndX = Math.floor(Math.random() * (arr.length - 1));
+                rndY = Math.floor(Math.random() * (arr.length - 1));
+                tmp = arr[rndX];
+                arr[rndX] = arr[rndY];
+                arr[rndY] = tmp;
+            }
+            
+            return arr;
+        };
+        
+          this.orderTeams = function () {
+            /*var ordered = [];
+            ordered.push(pop(_teams));
+
+            for (var i = 0; i < _teams.length; i++) {
+                for (var j = 0; j < ordered.length; j++) {
+                    if (_teams[i].getPoints() >= ordered[j].getPoints()) {
+                        ordered = ordered.unshift(_teams[i]);
+                        break;
+                    } else if (j==(ordered.length-1)) {
+                        ordered.push(_teams[i]);
+                    }
+                }
+            }
+            console.log(ordered);
+            return ordered;*/
         };
         
 	this.generate = function () { 
@@ -80,6 +117,7 @@ var Game = function (id, name, totalPanels) {
                if (_inferno) {
                     _teams[_currentTeam].setPoints(0);
                 }
+                _lastPoints = 0;
                 this.newTurn();
                 return false;
             }
@@ -108,7 +146,11 @@ var Game = function (id, name, totalPanels) {
         this.getCurrentPanel = function () {
 		return _currentPanel;
 	};
-        
+
+        this.nextAnswer = function () {
+            return _answerIndexes.pop();
+        };
+    
         this.nextPanel = function () {
                 _currentCorrect = 0;
                 _currentIncorrect = 0;
@@ -139,7 +181,8 @@ var Game = function (id, name, totalPanels) {
 	};
         
         this.addQuestion = function (question) {
-		_questions.push(question);
+               question.answers = shuffle(question.answers);
+                _questions.push(question);
 	};
         
         this.setQuestions = function (questions) {
@@ -159,6 +202,12 @@ var Game = function (id, name, totalPanels) {
 		return _teams;
 	};
 
+    	this.getLastPoints = function () {
+            if (_lastPoints > 0)
+		return "+" + _lastPoints;
+            else 
+                return 0;
+	};
 	this.show = function () {
 		return _name + ', ' + _points;
 	};

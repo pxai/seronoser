@@ -2,17 +2,17 @@
     "id": 0,
     "question": "Personajes relevantes en la informática",
     "answers": [
-        {"answer":"Steve Jobs", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/1.jpg"},
-        {"answer":"Bill Gates", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/2.jpg"},
-        {"answer":"Mark Zuckerberg", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/3.jpg"},
-        {"answer":"Linus Torvalds", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/4.jpg"},
-        {"answer":"Dennis Ritchie", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/5.jpg"},
-        {"answer":"Ada Lovelace", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/6.jpg"},
-        {"answer":"Alan Turing", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/7.jpg"},
-        {"answer":"Peter Norton", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/8.jpg"},
-        {"answer":"Peter North", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/9.jpg"},
-        {"answer":"Lionel Ritchie", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/10.jpg"},
-        {"answer":"Ada Byron", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/11.jpg"},
-        {"answer":"Steve Martin", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/12.jpg"}
+        {"answer":"Steve Jobs", "correct":true, "answered": false, "explanation":"Apple founder", "image" : "data/question1/1.jpg"},
+        {"answer":"Bill Gates", "correct":true, "answered": false, "explanation":"Microsoft founder", "image" : "data/question1/2.jpg"},
+        {"answer":"Mark Zuckerberg", "correct":true, "answered": false, "explanation":"Facebook founder", "image" : "data/question1/3.jpg"},
+        {"answer":"Linus Torvalds", "correct":true, "answered": false, "explanation":"Linux creator", "image" : "data/question1/4.jpg"},
+        {"answer":"Dennis Ritchie", "correct":true, "answered": false, "explanation":"C and Unix co-creator", "image" : "data/question1/5.jpg"},
+        {"answer":"Ada Lovelace", "correct":true, "answered": false, "explanation":"First programmer", "image" : "data/question1/6.jpg"},
+        {"answer":"Alan Turing", "correct":true, "answered": false, "explanation":"Computer inventor", "image" : "data/question1/7.jpg"},
+        {"answer":"Peter Norton", "correct":true, "answered": false, "explanation":"Famous developer", "image" : "data/question1/8.jpg"},
+        {"answer":"Peter North", "correct":false, "answered": false, "explanation":"Actor", "image" : "data/question1/9.jpg"},
+        {"answer":"Lionel Ritchie", "correct":false, "answered": false, "explanation":"Singer", "image" : "data/question1/10.jpg"},
+        {"answer":"Ada Byron", "correct":false, "answered": false, "explanation":"False name", "image" : "data/question1/11.jpg"},
+        {"answer":"Steve Martin", "correct":false, "answered": false, "explanation":"Actor & Comedian", "image" : "data/question1/12.jpg"}
     ]
 }

@@ -66,12 +66,33 @@
 
 .answer {
     height: 10em;
-    border: 1px solid gray;
+    border: 1px solid lightGray;
     text-align: center;
     padding-top: 2em;
 }
 
+.answer:hover {
+    border: 2px solid orangered;
+    background: orange;
+}
+
 .answerinfo {
-    text-align: center;
+    vertical-align: top;
+    text-align: center ;
     padding-top: 2em;    
+}
+
+.answerCorrect {
+    border: 2em solid #aad400;
+}
+
+.answerIncorrect {
+    border: 2em solid #ff5555;
+}
+
+.header1 {
+    font-size: 1.6em;
+}
+.header2 {
+    font-size: 1.2em;   
 }

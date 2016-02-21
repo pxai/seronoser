@@ -7,8 +7,11 @@
 * @author Pello Altadill - http://pello.io
 */
 
+//var randomImage = angular.module('randomImage');
 
 var RandomImage = function (path) {
+//randomImage.factory('RandomImage',['path',
+//    function (path) {
         var _path = path;
 	var _ok = ['ok0.jpg','ok1.jpg','ok2.jpg','ok3.jpg','ok4.jpg','ok5.jpg','ok6.jpg','ok7.jpg'];
 	var _fail = ['fail0.jpg','fail1.jpg','fail2.jpg','fail3.jpg','fail4.jpg','fail5.jpg','fail6.jpg','fail7.jpg'];
@@ -39,3 +42,4 @@ var RandomImage = function (path) {
 	};
 
 };
+//]);
