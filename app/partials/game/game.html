@@ -71,14 +71,14 @@
     <div class="modal-content">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
-        <h4 class="modal-title" id="theModalLabel">End of panel</h4>
+        <h3 class="modal-title" id="theModalLabel">End of panel</h3>
       </div>
       <div class="modal-body">
         <div ng-repeat="team in teams">
             <div>
              <span class="team">
-                <span><b>{{team.getName()}}:</b>{{team.getPoints()}} </span>
-                <span><img src="img/players/players{{team.getId()}}tb.jpg" class="img-rounded" alt="team image"></span>
+                <img src="img/players/players{{team.getId()}}tb.jpg" alt="team image">
+                <b>{{team.getName()}}:</b>{{team.getPoints()}} 
              </span>
             </div>
         </div>

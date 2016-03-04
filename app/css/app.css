@@ -65,6 +65,7 @@
 }
 
 .answer {
+    font-size: 1.3em;
     height: 10em;
     border: 1px solid lightGray;
     text-align: center;
