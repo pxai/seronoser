@@ -1,0 +1,18 @@
+{
+    "id": 4,
+    "question": "Películas de Christopher Nolan",
+    "answers": [
+        {"answer":"Interstellar", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/1.jpg"},
+        {"answer":"Batman Begins", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/2.jpg"},
+        {"answer":"Memento", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/3.jpg"},
+        {"answer":"Origen", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/4.jpg"},
+        {"answer":"El caballero oscuro", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/5.jpg"},
+        {"answer":"The prestige: El truco final", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/6.jpg"},
+        {"answer":"Insomnia", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/7.jpg"},
+        {"answer":"The Dark Knight Rises", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/8.jpg"},
+        {"answer":"El ilusionista", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/9.jpg"},
+        {"answer":"Man of Steel", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/10.jpg"},
+        {"answer":"Batman Returns", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/11.jpg"},
+        {"answer":"Batman Forever", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/12.jpg"}
+    ]
+}

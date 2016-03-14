@@ -1,0 +1,18 @@
+{
+    "id": 9,
+    "question": "Comandos linux",
+    "answers": [
+        {"answer":"ls", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/1.jpg"},
+        {"answer":"chown", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/2.jpg"},
+        {"answer":"chmod", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/3.jpg"},
+        {"answer":"man", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/4.jpg"},
+        {"answer":"cat", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/5.jpg"},
+        {"answer":"ps", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/6.jpg"},
+        {"answer":"netstat", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/7.jpg"},
+        {"answer":"traceroute", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/8.jpg"},
+        {"answer":"tracert", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/9.jpg"},
+        {"answer":"woman", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/10.jpg"},
+        {"answer":"attrib", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/11.jpg"},
+        {"answer":"deltree", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/12.jpg"}
+    ]
+}

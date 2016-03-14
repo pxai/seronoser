@@ -1,18 +1,18 @@
 {
     "id": 6,
-    "question": "Gestores de Bases de datos",
+    "question": "Bases de datos Relacionales",
     "answers": [
         {"answer":"SQLServer", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/1.jpg"},
         {"answer":"Oracle", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/2.jpg"},
         {"answer":"MySQL", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/3.jpg"},
         {"answer":"PostgreSQL", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/4.jpg"},
-        {"answer":"Access", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/5.jpg"},
+        {"answer":"Informix", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/5.jpg"},
         {"answer":"MariaDB", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/6.jpg"},
         {"answer":"HSQLDB", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/7.jpg"},
         {"answer":"SQLite", "correct":true, "answered": false, "explanation":"", "image" : "data/question1/8.jpg"},
-        {"answer":"Excel", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/9.jpg"},
-        {"answer":"Superbase", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/10.jpg"},
-        {"answer":"Oraculus", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/11.jpg"},
-        {"answer":"Ubuntu", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/12.jpg"}
+        {"answer":"MongoDB", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/9.jpg"},
+        {"answer":"CouchDB", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/10.jpg"},
+        {"answer":"IndexedDB", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/11.jpg"},
+        {"answer":"RelationalDB", "correct":false, "answered": false, "explanation":"", "image" : "data/question1/12.jpg"}
     ]
 }
